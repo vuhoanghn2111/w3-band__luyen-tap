@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+    font-family: "Arial", "Helvetica", sans-serif;
+}
+/* Common */
+a {
+    text-decoration: none;
+}
+/* ================Header=============== */
+
+.hero {
+    position: relative;
+    padding-top: 50%;
+    background: url(./img/slider/chicago.jpg) top center / cover no-repeat;
+}
+.hero .container {
+    position: absolute;
+    bottom: 47px;
+    color: #fff;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.hero__heading {
+    font-weight: 500;
+    font-size: 24px;
+}
+.hero__desc {
+    font-size: 15px;
+    margin-top: 25px;
+}
