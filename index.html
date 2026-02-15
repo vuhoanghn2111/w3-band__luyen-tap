@@ -11,7 +11,7 @@
         />
         <title>The band</title>
     </head>
-    <body>
+    <body style="height: 10000px">
         <!-- Header -->
         <header>
             <div class="header">
@@ -29,28 +29,30 @@
                         <li>
                             <a href="#!" class="header__item">CONTACT</a>
                         </li>
-                        <li class="header__nav--n1">
+                        <li>
                             <a href="#!" class="header__item">
                                 MORE
                                 <i class="nav-arrown-down ti-angle-double-down">
                                 </i>
                             </a>
                             <ul class="header__sub-nav">
-                                <li>
-                                    <a class="header__item--sub" href="#!">
-                                        Merchandise
-                                    </a>
-                                </li>
-                                <li class="header__item">
-                                    <a class="header__item--sub" href="#!">
-                                        Extras
-                                    </a>
-                                </li>
-                                <li class="header__item">
-                                    <a class="header__item--sub" href="#!">
-                                        Media
-                                    </a>
-                                </li>
+                                <ul>
+                                    <li>
+                                        <a class="header__item--sub" href="#!">
+                                            Merchandise
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__item--sub" href="#!">
+                                            Extras
+                                        </a>
+                                    </li>
+                                    <li class="header__item">
+                                        <a class="header__item--sub" href="#!">
+                                            Media
+                                        </a>
+                                    </li>
+                                </ul>
                             </ul>
                         </li>
                     </ul>
@@ -62,7 +64,7 @@
             </div>
             <!-- Hero -->
             <div class="hero">
-                <div class="container">
+                <div class="hero__container">
                     <h1 class="hero__heading">New York</h1>
                     <p class="hero__desc">
                         The atmosphere in New York is lorem ipsum.
@@ -71,7 +73,143 @@
             </div>
         </header>
         <!-- Main -->
-        <main></main>
+        <main>
+            <!-- Band -->
+            <section class="band">
+                <div class="container">
+                    <!-- Content -->
+                    <section class="band__content">
+                        <h2 class="band__heading">THE BAND</h2>
+                        <p class="band__sub-heading">We love music</p>
+                        <p class="band__main-content">
+                            We have created a fictional band website. Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                            exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat. Duis aute irure dolor in
+                            reprehenderit in voluptate velit esse cillum dolore
+                            eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia
+                            deserunt mollit anim id est laborum consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim
+                            veniam, quis nostrud exercitation ullamco laboris
+                            nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                    </section>
+                    <!-- Member -->
+                    <article class="band__member">
+                        <div class="member__card">
+                            <span class="member__name">Name</span>
+                            <img
+                                src="./assets/img/bandmember/bandmember1.jpg"
+                                alt="member"
+                                class="member__img"
+                            />
+                        </div>
+                        <div class="member__card">
+                            <span class="member__name">Name</span>
+                            <img
+                                src="./assets/img/bandmember/bandmember1.jpg"
+                                alt="member"
+                                class="member__img"
+                            />
+                        </div>
+                        <div class="member__card">
+                            <span class="member__name">Name</span>
+                            <img
+                                src="./assets/img/bandmember/bandmember1.jpg"
+                                alt="member"
+                                class="member__img"
+                            />
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- Tour -->
+            <section class="tour">
+                <div class="container">
+                    <!-- Ticket -->
+                    <section class="tour__ticket">
+                        <h2 class="tour__heading">TOUR DATES</h2>
+                        <p class="tour__sub-heading">
+                            Remember to book your tickets!
+                        </p>
+                        <ul class="tickets-list">
+                            <li>
+                                September <span class="sold-out">Sold out</span>
+                            </li>
+                            <li>
+                                October <span class="sold-out">Sold out</span>
+                            </li>
+                            <li>
+                                November <span class="ticket__quantity">3</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <article class="tour__place">
+                        <!-- New York -->
+                        <div class="tour__card">
+                            <img
+                                src="./assets/img/place/newyork.jpg"
+                                alt="new york"
+                                class="tour__place--img"
+                            />
+                            <div class="tour__place--info">
+                                <h3 class="place__name">New York</h3>
+                                <p class="tour__time">Fri 27 Nov 2016</p>
+                                <p class="tour__desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed
+                                    vitae justo.
+                                </p>
+                                <button class="btn tour__btn">
+                                    Buy Ticket
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Paris -->
+                        <div class="tour__card">
+                            <img
+                                src="./assets/img/place/paris.jpg"
+                                alt="paris"
+                                class="tour__place--img"
+                            />
+                            <div class="tour__place--info">
+                                <h3 class="place__name">Paris</h3>
+                                <p class="tour__time">Sat 28 Nov 2016</p>
+                                <p class="tour__desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed
+                                    vitae justo.
+                                </p>
+                                <button class="btn tour__btn">
+                                    Buy Ticket
+                                </button>
+                            </div>
+                        </div>
+                        <!-- San fran -->
+                        <div class="tour__card">
+                            <img
+                                src="./assets/img/place/sanfran.jpg"
+                                alt="san fran"
+                                class="tour__place--img"
+                            />
+                            <div class="tour__place--info">
+                                <h3 class="place__name">San Francisco</h3>
+                                <p class="tour__time">Sun 29 Nov 2016</p>
+                                <p class="tour__desc">
+                                    Praesent tincidunt sed tellus ut rutrum sed
+                                    vitae justo.
+                                </p>
+                                <button class="btn tour__btn">
+                                    Buy Ticket
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
         <!-- Footer -->
         <footer></footer>
     </body>
