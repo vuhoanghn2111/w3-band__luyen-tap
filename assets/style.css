@@ -13,9 +13,76 @@ a {
     text-decoration: none;
 }
 /* ================Header=============== */
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: black;
+    z-index: 1;
+}
 
+.header__list > li {
+    display: inline-block;
+}
+.header__item {
+    color: #fff;
+}
+.header__nav--n1 {
+    position: relative;
+}
+.header__nav--n1 .nav-arrown-down {
+    font-size: 12px;
+}
+.header__nav--n1:hover .header__sub-nav {
+    display: block;
+}
+.header__list a {
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+.header__sub-nav {
+    display: none;
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.header__item--sub {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+.search-btn {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 2rem;
+}
+.search-btn:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+.header__item:hover,
+.header__item--sub:hover {
+    color: black;
+    background-color: #ccc;
+}
+/* Hero */
 .hero {
     position: relative;
+    margin-top: 46px;
     padding-top: 50%;
     background: url(./img/slider/chicago.jpg) top center / cover no-repeat;
 }
