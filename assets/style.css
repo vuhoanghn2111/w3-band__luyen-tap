@@ -38,6 +38,19 @@ a {
     color: #000;
     background-color: #ccc;
 }
+.section__heading--h2 {
+    font-size: 3rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+}
+.section__sub-heading {
+    margin-top: 25px;
+    font-size: 1.5rem;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+}
 /* ================Header=============== */
 /* Header */
 .header {
@@ -85,6 +98,10 @@ a {
 .header__item--sub {
     color: #000;
 }
+.nav-arrown-down {
+    font-size: 12px;
+}
+
 .search-btn {
     width: 46px;
     height: 46px;
@@ -98,7 +115,7 @@ a {
     background-color: #f44336;
     cursor: pointer;
 }
-.header__item:hover,
+.header__list li:hover .header__item,
 .header__item--sub:hover {
     color: black;
     background-color: #ccc;
@@ -127,23 +144,6 @@ a {
     margin-top: 25px;
 }
 /* =======================Band========================= */
-
-.band__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.band__heading {
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: 4px;
-}
-.band__sub-heading {
-    margin-top: 25px;
-    font-size: 1.5rem;
-    font-style: italic;
-    opacity: 0.6;
-}
 .band__main-content {
     margin-top: 25px;
     font-size: 1.5rem;
@@ -169,23 +169,14 @@ a {
     object-fit: cover;
     border-radius: 4px;
 }
-/* Tour */
+/* ==================Tour====================== */
 .tour {
     background-color: #000;
 }
 .tour__heading {
-    font-size: 3rem;
-    font-weight: 500;
-    text-align: center;
-    letter-spacing: 4px;
     color: #fff;
 }
 .tour__sub-heading {
-    margin-top: 25px;
-    font-size: 1.5rem;
-    text-align: center;
-    font-style: italic;
-    opacity: 0.6;
     color: #fff;
 }
 .tickets-list {
@@ -253,4 +244,61 @@ a {
 .tour__btn {
     min-width: 100px;
     margin-top: 15px;
+}
+/* ==================Contact=================== */
+.contact__form {
+    margin-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact__info {
+    width: 50%;
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+.contact__info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form__top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+}
+.form-control {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-message {
+    width: 100%;
+    margin-top: 8px;
+}
+.contact__btn {
+    float: right;
+    border-radius: 4px;
+    margin-top: 16px;
+}
+/* =====================Footer========================== */
+.footer__social {
+    padding: 64px 64px;
+    text-align: center;
+    font-size: 2.4rem;
+}
+.footer__social a {
+    opacity: 0.6;
+    color: black;
+}
+.footer__social a:hover {
+    opacity: 0.4;
+}
+.footer__social a:not(:first-child) {
+    margin-left: 8px;
+}
+.footer__sub {
+    margin-top: 15px;
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, 0.6);
 }

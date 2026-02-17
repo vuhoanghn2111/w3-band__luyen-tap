@@ -11,7 +11,7 @@
         />
         <title>The band</title>
     </head>
-    <body style="height: 10000px">
+    <body>
         <!-- Header -->
         <header>
             <div class="header">
@@ -42,12 +42,12 @@
                                             Merchandise
                                         </a>
                                     </li>
-                                    <li class="header__item">
+                                    <li>
                                         <a class="header__item--sub" href="#!">
                                             Extras
                                         </a>
                                     </li>
-                                    <li class="header__item">
+                                    <li>
                                         <a class="header__item--sub" href="#!">
                                             Media
                                         </a>
@@ -79,8 +79,12 @@
                 <div class="container">
                     <!-- Content -->
                     <section class="band__content">
-                        <h2 class="band__heading">THE BAND</h2>
-                        <p class="band__sub-heading">We love music</p>
+                        <h2 class="band__heading section__heading--h2">
+                            THE BAND
+                        </h2>
+                        <p class="band__sub-heading section__sub-heading">
+                            We love music
+                        </p>
                         <p class="band__main-content">
                             We have created a fictional band website. Lorem
                             ipsum dolor sit amet, consectetur adipiscing elit,
@@ -132,8 +136,10 @@
                 <div class="container">
                     <!-- Ticket -->
                     <section class="tour__ticket">
-                        <h2 class="tour__heading">TOUR DATES</h2>
-                        <p class="tour__sub-heading">
+                        <h2 class="tour__heading section__heading--h2">
+                            TOUR DATES
+                        </h2>
+                        <p class="tour__sub-heading section__sub-heading">
                             Remember to book your tickets!
                         </p>
                         <ul class="tickets-list">
@@ -209,8 +215,83 @@
                     </article>
                 </div>
             </section>
+            <!-- Contact -->
+            <section class="contact">
+                <div class="container">
+                    <section class="contact__content">
+                        <h2 class="contact__heading section__heading--h2">
+                            CONTACT
+                        </h2>
+                        <p class="contact__sub-heading section__sub-heading">
+                            Fan? Drop a note!
+                        </p>
+                    </section>
+                    <div class="contact__form">
+                        <div class="contact__info">
+                            <p class="contact__add">
+                                <i class="ti-location-pin"></i>
+                                <span> Chicago, US</span>
+                            </p>
+                            <p class="contact__phone">
+                                <i class="ti-mobile"></i>
+                                <span> Phone: +00 151515</span>
+                            </p>
+                            <p class="contact__email">
+                                <i class="ti-email"></i>
+                                <span> Email: mail@mail.com</span>
+                            </p>
+                        </div>
+                        <form class="contact__form--detail" action="">
+                            <div class="form__top">
+                                <input
+                                    type="text"
+                                    name="name"
+                                    placeholder="Name"
+                                    required
+                                    id="contact-name"
+                                    class="form-control"
+                                />
+                                <input
+                                    type="email"
+                                    name="email"
+                                    placeholder="Email"
+                                    required
+                                    id="contact-emal"
+                                    class="form-control"
+                                />
+                            </div>
+                            <div class="form__bot">
+                                <input
+                                    type="text"
+                                    name="message"
+                                    placeholder="Message"
+                                    required
+                                    id="contact-message"
+                                    class="form-message form-control"
+                                />
+                            </div>
+                            <input
+                                type="submit"
+                                class="btn contact__btn"
+                                value="SEND"
+                            />
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
         <!-- Footer -->
-        <footer></footer>
+        <footer>
+            <img src="./assets/img/map/map.jpg" alt="map" class="footer__map">
+            <div class="footer__social">
+                <a href="https://www.facebook.com/vdh.2706hn"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/vdh27069/"><i class="ti-instagram"></i></a>
+                <a href="https://www.youtube.com/@uchoangvu8611"><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+                <p class="footer__sub">Powered by <a class="footer__link" href="#!">w3.css</a></p>
+            </div>
+        </footer>
     </body>
 </html>
